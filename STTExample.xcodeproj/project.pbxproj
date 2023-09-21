@@ -11,6 +11,7 @@
 		BED362442ABC0F8400143C55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED362432ABC0F8400143C55 /* SceneDelegate.swift */; };
 		BED362462ABC0F8400143C55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED362452ABC0F8400143C55 /* ViewController.swift */; };
 		BED3624B2ABC0F8400143C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED3624A2ABC0F8400143C55 /* Assets.xcassets */; };
+		BED362572ABC12EE00143C55 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BED362562ABC12EE00143C55 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED362572ABC12EE00143C55 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +79,9 @@
 			dependencies = (
 			);
 			name = STTExample;
+			packageProductDependencies = (
+				BED362562ABC12EE00143C55 /* SnapKit */,
+			);
 			productName = STTExample;
 			productReference = BED3623E2ABC0F8400143C55 /* STTExample.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +110,9 @@
 				Base,
 			);
 			mainGroup = BED362352ABC0F8400143C55;
+			packageReferences = (
+				BED362552ABC12EE00143C55 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = BED3623F2ABC0F8400143C55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -333,6 +341,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BED362552ABC12EE00143C55 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BED362562ABC12EE00143C55 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BED362552ABC12EE00143C55 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BED362362ABC0F8400143C55 /* Project object */;
 }
