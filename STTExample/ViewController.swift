@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     lazy var recordingSession: AVAudioSession = AVAudioSession.sharedInstance()
     var audioRecorder: AVAudioRecorder!
         
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
